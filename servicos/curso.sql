@@ -36,12 +36,9 @@ CREATE TABLE empresas (
 
 LOCK TABLES empresas WRITE;
 /*!40000 ALTER TABLE empresas DISABLE KEYS */;
--- INSERT INTO empresas VALUES (1,'Chilli Beans','chillibeans.png'),(2,'Ray-Ban','rayban.png'),(3,'H. Stern','hstern.png'),(4,'Boticário','boticario.png'),(5,'Arezzo','arezzo.png'),(6,'Dafiti','dafiti.png');
 INSERT INTO empresas VALUES (1,'Ifba','ifba-divulgao.jpg');
 /*!40000 ALTER TABLE empresas ENABLE KEYS */;
 UNLOCK TABLES;
-
-
 
 --
 -- Table structure for table produtos
@@ -94,8 +91,6 @@ UNLOCK TABLES;
 
 -- Dump completed on 2021-04-16 21:48:40
 
-
-
 --
 -- Table structure for table feeds
 --
@@ -119,14 +114,9 @@ CREATE TABLE feeds (
 
 LOCK TABLES feeds WRITE;
 /*!40000 ALTER TABLE feeds DISABLE KEYS */;
--- INSERT INTO feeds VALUES (1,'2021-04-14 18:21:11',1),(2,'2021-04-14 18:21:11',2),(3,'2021-04-14 18:21:11',3),(4,'2021-04-14 18:21:11',4),(5,'2021-04-14 18:21:11',5),(6,'2021-04-14 18:21:11',6),(7,'2021-04-14 18:21:11',7);
 INSERT INTO feeds VALUES (1,'2025-03-10 18:21:11',1),(2,'2025-04-14 18:21:11',2),(3,'2025-04-14 18:21:11',3),(4,'2025-04-14 18:21:11',4),(5,'2025-04-14 18:21:11',5),(6,'2025-04-14 18:21:11',6),(7,'2025-04-14 18:21:11',7);
 /*!40000 ALTER TABLE feeds ENABLE KEYS */;
 UNLOCK TABLES;
-
-
-
-
 
 --
 -- Table structure for table comentarios
@@ -154,7 +144,6 @@ CREATE TABLE comentarios (
 
 LOCK TABLES comentarios WRITE;
 /*!40000 ALTER TABLE comentarios DISABLE KEYS */;
--- INSERT INTO comentarios VALUES (1,'teste',1,'Luis Paulo','luispscarvalho@gmail.com','2021-04-16 21:32:35');
 INSERT INTO comentarios VALUES (1,'teste',1,'Rafael Carvalho','fanfones.10@gmail.com','2025-02-07 22:18:23');
 /*!40000 ALTER TABLE comentarios ENABLE KEYS */;
 UNLOCK TABLES;
@@ -183,7 +172,6 @@ CREATE TABLE likes (
 
 LOCK TABLES likes WRITE;
 /*!40000 ALTER TABLE likes DISABLE KEYS */;
--- INSERT INTO likes VALUES (8,1,'luispscarvalho@gmail.com');
 INSERT INTO likes VALUES (5,1,'fanfones.10@gmail.com');
 /*!40000 ALTER TABLE likes ENABLE KEYS */;
 UNLOCK TABLES;
