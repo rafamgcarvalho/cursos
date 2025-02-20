@@ -8,10 +8,8 @@ servico = Flask("cursos")
 DESCRICAO = "serviço de listagem e cadastro de cursos"
 VERSAO = "1.0"
 
-# SERVIDOR_BANCO = "banco"
 USUARIO_BANCO = "root"
 SENHA_BANCO = "admin"
-# NOME_BANCO = "cursos"
 
 SERVIDOR_BANCO = "curso"
 NOME_BANCO = "curso"
@@ -76,7 +74,7 @@ def find_cursos(ultimo_feed, tamanho_da_pagina, nome_do_curso):
         "empresas.id as empresa_id, empresas.nome as nome_empresa, empresas.avatar, cursos.nome as nome_curso, cursos.descricao, FORMAT(cursos.preco, 2) as preco, " +
         "cursos.url, cursos.imagemCurso, IFNULL(cursos.imagemEmpresa, '') as imagemEmpresa " +
         "FROM feeds, cursos, empresas " +
-        "WHERE cursos.id = feeds.curso " +  # Alterado de feeds.cursos para feeds.curso
+        "WHERE cursos.id = feeds.curso " + 
         "AND empresas.id = cursos.empresa " +
             "AND cursos.nome LIKE '%" + nome_do_curso + "%' "  +
             "AND feeds.id > " + str(ultimo_feed) + " ORDER BY curso_id ASC, data DESC " +

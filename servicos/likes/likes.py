@@ -7,10 +7,8 @@ servico = Flask("likes")
 DESCRICAO = "serviço de cadastro de likes"
 VERSAO = "1.0"
 
-# SERVIDOR_BANCO = "banco"
 USUARIO_BANCO = "root"
 SENHA_BANCO = "admin"
-# NOME_BANCO = "cursos"
 
 SERVIDOR_BANCO = "curso"
 NOME_BANCO = "curso"
